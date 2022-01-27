@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'update-test';
+  darkMode = false;
+
+  onToggleDarkMode() {
+    document.body.classList.toggle('dark-theme');
+  }
 }
